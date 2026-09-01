@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Neonflux — an experimental visual studio portfolio.">
+  <title>Neonflux — Visual Studio</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__top micro-row">
+      <span>NF® / 2026</span>
+      <span>LOADING VISUAL SYSTEM</span>
+      <span class="preloader__count">000</span>
+    </div>
+    <div class="preloader__word" aria-hidden="true">
+      <span>N</span><span>e</span><span>o</span><span>n</span><span>f</span><span>l</span><span>u</span><span>x</span>
+    </div>
+    <div class="preloader__line"><span></span></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"><span class="cursor__label">VIEW</span></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand magnetic" href="#top" aria-label="Neonflux home">
+      <span>NEONFLUX</span><sup>®</sup>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a class="nav-link magnetic" href="#work"><span>INDEX</span><b>01</b></a>
+      <a class="nav-link magnetic" href="#studio"><span>STUDIO</span><b>02</b></a>
+      <a class="nav-link magnetic" href="#contact"><span>CONTACT</span><b>03</b></a>
+    </nav>
+
+    <button class="menu-toggle magnetic" type="button" aria-label="Open menu" aria-expanded="false">
+      <span>MENU</span><i></i><i></i>
+    </button>
+  </header>
+
+  <aside class="menu-panel" aria-hidden="true">
+    <div class="menu-panel__meta micro-row">
+      <span>VISUAL CREATIVE STUDIO</span>
+      <button class="menu-close" type="button">CLOSE ×</button>
+    </div>
+    <nav class="menu-panel__nav" aria-label="Mobile navigation">
+      <a href="#top"><small>01</small><span>INDEX</span></a>
+      <a href="#work"><small>02</small><span>WORK</span></a>
+      <a href="#studio"><small>03</small><span>STUDIO</span></a>
+      <a href="#contact"><small>04</small><span>CONTACT</span></a>
+    </nav>
+    <div class="menu-panel__footer micro-row">
+      <span>MADRID / EUROPE</span>
+      <span>AVAILABLE FOR SELECTED PROJECTS</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__meta hero__meta--left micro-row reveal-on-load">
+        <span>INDEPENDENT CREATIVE PRACTICE</span>
+        <span>DESIGN / MOTION / IMAGE</span>
+      </div>
+      <div class="hero__meta hero__meta--right micro-row reveal-on-load">
+        <span>40.4168° N</span>
+        <span>003.7038° W</span>
+      </div>
+
+      <div class="hero__title-wrap">
+        <h1 id="hero-title" class="hero__title" aria-label="Neonflux">
+          <span class="char">N</span><span class="char">e</span><span class="char">o</span><span class="char">n</span><span class="char">f</span><span class="char">l</span><span class="char">u</span><span class="char">x</span>
+        </h1>
+      </div>
+
+      <p class="hero__intro reveal-on-load">
+        FUTURE-FACING IMAGE MAKING<br>
+        FOR CULTURE, FASHION &amp; TECHNOLOGY.
+      </p>
+
+      <a class="hero__scroll magnetic reveal-on-load" href="#work">
+        <span>SCROLL TO EXPLORE</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v17M5 13l7 7 7-7"/></svg>
+      </a>
+
+      <div class="hero__media-grid" aria-label="Featured projects">
+        <a class="project-tile project-tile--wide cursor-view" href="#project-01" data-project="AERIFORM / 01">
+          <div class="project-tile__media parallax-media">
+            <img src="assets/chrome-field.svg" alt="Abstract chrome forms suspended over a monochrome field">
+          </div>
+          <div class="project-tile__shade"></div>
+          <div class="project-tile__meta micro-row">
+            <span>AERIFORM</span><span>ART DIRECTION / 2026</span><span>01 ↗</span>
+          </div>
+        </a>
+
+        <a class="project-tile project-tile--compact cursor-view" href="#project-02" data-project="RED SHIFT / 02">
+          <div class="project-tile__media parallax-media">
+            <img src="assets/red-orb.svg" alt="Red luminous sphere in a cool blue architectural space">
+          </div>
+          <div class="project-tile__shade"></div>
+          <div class="project-tile__meta micro-row">
+            <span>RED SHIFT</span><span>MOTION / 2026</span><span>02 ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head reveal">
+        <div class="section-head__index">01</div>
+        <h2 id="work-title">Selected<br>Work</h2>
+        <p>Experimental identities, moving images and digital worlds developed for progressive brands and cultural collaborators.</p>
+        <span class="section-head__count">06 PROJECTS</span>
+      </div>
+
+      <div class="work-list">
+        <article class="work-row cursor-view reveal" id="project-01" data-project="AERIFORM / 01">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">01</div>
+            <h3>Aeriform</h3>
+            <div class="work-row__type">ART DIRECTION<br>IMAGE SYSTEM</div>
+            <div class="work-row__year">2026</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/chrome-field.svg" alt=""></div>
+          </a>
+        </article>
+
+        <article class="work-row cursor-view reveal" id="project-02" data-project="RED SHIFT / 02">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">02</div>
+            <h3>Red Shift</h3>
+            <div class="work-row__type">FILM<br>MOTION IDENTITY</div>
+            <div class="work-row__year">2026</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/red-orb.svg" alt=""></div>
+          </a>
+        </article>
+
+        <article class="work-row cursor-view reveal" data-project="SIGNAL / 03">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">03</div>
+            <h3>Signal</h3>
+            <div class="work-row__type">CAMPAIGN<br>CGI / MOTION</div>
+            <div class="work-row__year">2025</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/blue-signal.svg" alt=""></div>
+          </a>
+        </article>
+
+        <article class="work-row cursor-view reveal" data-project="VEIL / 04">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">04</div>
+            <h3>Veil</h3>
+            <div class="work-row__type">FASHION FILM<br>PHOTOGRAPHY</div>
+            <div class="work-row__year">2025</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/veil.svg" alt=""></div>
+          </a>
+        </article>
+
+        <article class="work-row cursor-view reveal" data-project="MONOLITH / 05">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">05</div>
+            <h3>Monolith</h3>
+            <div class="work-row__type">DIGITAL SPACE<br>INTERACTION</div>
+            <div class="work-row__year">2025</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/monolith.svg" alt=""></div>
+          </a>
+        </article>
+
+        <article class="work-row cursor-view reveal" data-project="SYNTHESIS / 06">
+          <a href="#contact" class="work-row__link">
+            <div class="work-row__number">06</div>
+            <h3>Synthesis</h3>
+            <div class="work-row__type">BRAND SYSTEM<br>EXPERIENCE</div>
+            <div class="work-row__year">2024</div>
+            <div class="work-row__arrow">↗</div>
+            <div class="work-row__preview"><img src="assets/synthesis.svg" alt=""></div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Studio statement">
+      <div class="statement__eyebrow micro-row reveal">
+        <span>NEONFLUX®</span><span>CREATIVE PRACTICE</span><span>EST. 2024</span>
+      </div>
+      <p class="statement__copy reveal">
+        WE BUILD <span class="inline-media"><img src="assets/red-orb.svg" alt=""></span> DISTINCTIVE VISUAL WORLDS
+        AT THE INTERSECTION OF <em>DESIGN</em>, <span class="inline-media inline-media--wide"><img src="assets/chrome-field.svg" alt=""></span>
+        TECHNOLOGY AND CULTURE.
+      </p>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio__visual reveal">
+        <div class="studio__visual-inner parallax-media"><img src="assets/veil.svg" alt="Abstract blue portrait obscured by translucent material"></div>
+        <div class="studio__visual-label micro-row"><span>RESEARCH IMAGE / 03</span><span>NEONFLUX ARCHIVE</span></div>
+      </div>
+      <div class="studio__content">
+        <div class="section-label reveal"><span>02</span><span>THE STUDIO</span></div>
+        <h2 id="studio-title" class="reveal">Small team.<br>Wide spectrum.</h2>
+        <p class="studio__lead reveal">An independent design and image-making practice producing identities, films, campaigns and interactive experiences.</p>
+        <div class="studio__columns reveal">
+          <p>We partner closely with people who value strong ideas and precise execution. Every project is built as a flexible visual system rather than a single output.</p>
+          <ul>
+            <li><span>01</span>CREATIVE DIRECTION</li>
+            <li><span>02</span>BRAND &amp; DIGITAL DESIGN</li>
+            <li><span>03</span>MOTION &amp; FILM</li>
+            <li><span>04</span>CGI &amp; AI IMAGE MAKING</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>AVAILABLE FOR SELECTED COLLABORATIONS</span><i>✳</i><span>AVAILABLE FOR SELECTED COLLABORATIONS</span><i>✳</i><span>AVAILABLE FOR SELECTED COLLABORATIONS</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__top micro-row reveal">
+        <span>03 / CONTACT</span>
+        <span>NEW BUSINESS &amp; COLLABORATIONS</span>
+        <span>MADRID / WORLDWIDE</span>
+      </div>
+      <h2 id="contact-title" class="contact__title reveal">
+        <span>LET’S</span>
+        <a class="contact__link magnetic" href="mailto:hello@neonflux.studio">MAKE<br>SOMETHING<span class="contact__arrow">↗</span></a>
+      </h2>
+      <footer class="site-footer micro-row reveal">
+        <a href="mailto:hello@neonflux.studio">HELLO@NEONFLUX.STUDIO</a>
+        <div class="site-footer__socials"><a href="#">INSTAGRAM ↗</a><a href="#">VIMEO ↗</a></div>
+        <span>© 2026 NEONFLUX</span>
+        <button class="back-to-top" type="button">BACK TO TOP ↑</button>
+      </footer>
+    </section>
+  </main>
+<script src="main.js"></script>
+</body>
+</html>
