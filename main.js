@@ -395,4 +395,69 @@
             : 'smooth'
       });
     });
+    // Client name switcher.
+    const clientSwitcher =
+      document.querySelector('#client-switcher');
+    
+    if (clientSwitcher) {
+      const clients = [
+        'Mahou',
+        'Movistar',
+        'Vivagym',
+        'Carrefour',
+        'Ikea'
+      ];
+    
+      let clientIndex = 0;
+    
+      const changeClient = () => {
+        clientSwitcher.classList.add('is-changing');
+    
+        setTimeout(() => {
+          clientIndex =
+            (clientIndex + 1) % clients.length;
+    
+          clientSwitcher.textContent =
+            clients[clientIndex];
+    
+          clientSwitcher.classList.remove('is-changing');
+        }, 120);
+      };
+    
+      setInterval(changeClient, 1400);
+    }
+    
+    // Workplace name switcher.
+const workplaceSwitcher =
+  document.querySelector('#workplace-switcher');
+
+if (workplaceSwitcher) {
+  const workplaces = [
+    'McCann Worldgroup',
+    'Super Real',
+    'Coonic'
+  ];
+
+  let workplaceIndex = 0;
+
+  const changeWorkplace = () => {
+    workplaceSwitcher.classList.add(
+      'is-changing-workplace'
+    );
+
+    setTimeout(() => {
+      workplaceIndex =
+        (workplaceIndex + 1) % workplaces.length;
+
+      workplaceSwitcher.textContent =
+        workplaces[workplaceIndex];
+
+      workplaceSwitcher.classList.remove(
+        'is-changing-workplace'
+      );
+    }, 180);
+  };
+
+  setInterval(changeWorkplace, 1600);
+}
 })();
