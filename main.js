@@ -460,4 +460,27 @@ if (workplaceSwitcher) {
 
   setInterval(changeWorkplace, 1600);
 }
+// Animated favicon — 125 PNG frames
+const favicon = document.querySelector('#favicon');
+
+if (favicon) {
+  const faviconFrames = Array.from(
+    { length: 125 },
+    (_, i) =>
+      `Imgs/ezgif-7ac84bd4c27f2a45-png-split/ezgif-frame-${String(i + 1).padStart(3, '0')}.png`
+  );
+
+  let faviconFrame = 0;
+
+  // Preload frames
+  faviconFrames.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+
+  setInterval(() => {
+    faviconFrame = (faviconFrame + 1) % faviconFrames.length;
+    favicon.href = faviconFrames[faviconFrame];
+  }, 50);
+}
 })();
