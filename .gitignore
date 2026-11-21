@@ -1,0 +1,8 @@
+# originals and local tooling — not published
+Imgs/
+_v1_backup/
+Dirtyline36Daysoftype2022/
+node_modules/
+node-v*/
+.DS_Store
+Icon?

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es" class="is-project">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000">
+  <meta name="description" content="Proyecto de María Paula Barrantes — Motion & Graphic Designer." data-i18n-meta>
+  <title>María Paula — Proyecto</title>
+  <script>document.documentElement.classList.add("is-booting")</script>
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="media/favicon/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo:wdth,wght@62..125,100..900&family=Funnel+Display:wght@300..800&family=Funnel+Sans:wght@300..800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+
+  <header>
+    <a class="logo" href="index.html" aria-label="María Paula — inicio" data-nav-home>MP</a>
+  </header>
+
+  <!-- Hero (fixed behind content) -->
+  <div class="p-hero" data-exit-shift aria-hidden="true">
+    <div class="p-hero__media" data-hero-media></div>
+    <div class="p-hero__dim" data-hero-dim></div>
+  </div>
+
+  <!-- Small fixed title -->
+  <div class="p-mini" data-mini aria-hidden="true">
+    <div class="p-mini__in">
+      <div class="p-mini__title" data-mini-title></div>
+      <p data-mini-tag></p>
+    </div>
+  </div>
+
+  <main class="p-page" data-exit-shift>
+    <div class="p-spacer"></div>
+    <article class="p-body" data-project-body>
+      <!-- rendered by project.js from projects.js -->
+    </article>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026</span><span aria-hidden="true">-</span><span>MADRID</span><span aria-hidden="true">|</span>
+    <a href="mailto:contactpaulabarrantes@gmail.com">CONTACTPAULABARRANTES@GMAIL.COM</a><span aria-hidden="true">|</span>
+    <a href="https://www.instagram.com/pauhaus.psd/" target="_blank" rel="noopener" aria-label="Instagram @pauhaus.psd (se abre en una pestaña nueva)">INSTAGRAM</a><span aria-hidden="true">|</span>
+    <a href="https://www.behance.net/paulabarrantes3" target="_blank" rel="noopener" aria-label="Behance (se abre en una pestaña nueva)">BEHANCE</a>
+  </footer>
+
+  <div class="menu" data-menu>
+    <button class="menu__btn" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-btn>
+      <i></i><i></i>
+    </button>
+    <nav class="menu__panel" aria-label="Navegación">
+      <a href="index.html" data-nav-home><small>01</small><span data-i18n="menu.works">Proyectos</span></a>
+      <a href="index.html#about" data-nav-home><small>02</small><span data-i18n="menu.about">Sobre mí</span></a>
+      <a href="mailto:contactpaulabarrantes@gmail.com"><small>03</small><span data-i18n="menu.talk">Hablemos</span></a>
+      <p class="menu__social"><a href="https://www.instagram.com/pauhaus.psd/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.behance.net/paulabarrantes3" target="_blank" rel="noopener">Behance ↗</a></p>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="projects.js"></script>
+  <script src="transition.js"></script>
+  <script src="cursor.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>
