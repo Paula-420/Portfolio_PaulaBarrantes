@@ -6,3 +6,5 @@ node_modules/
 node-v*/
 .DS_Store
 Icon?
+.vercel
+.env*
